@@ -29,6 +29,9 @@ const app = async() =>{
     else if{
         Movie.updateOne({title: "The Revenant"},{year: 2015}).then(res => console.log(res))
     }
+    else if{
+        Movie.remove({title: "Harry Potter and the half blood prince"}).then(msg => console.log(msg))
+    }
                 else{
                     res.send(data);
                 }
